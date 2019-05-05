@@ -15,7 +15,7 @@
 	//fix для ссылок внутри чекбоса, т.к. сделал клик на весь элемент а не только на "чек".
 	[].slice.call(document.querySelectorAll('.link')).forEach(function(item, index, array) {
 	item.addEventListener('click', function(e) {
-		window.open(this.getAttribute('href'));
+		e.stopImmediatePropagation();
 	});
 });
 
