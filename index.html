@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="google" value="notranslate">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link sizes="57x57" href="apple-touch-icon-57x57.png" rel="apple-touch-icon">
+		<link sizes="114x114" href="apple-touch-icon-114x114.png" rel="apple-touch-icon">
+		<link sizes="72x72" href="apple-touch-icon-72x72.png" rel="apple-touch-icon">
+		<link sizes="144x144" href="apple-touch-icon-144x144.png" rel="apple-touch-icon">
+		<link sizes="60x60" href="apple-touch-icon-60x60.png" rel="apple-touch-icon">
+		<link sizes="120x120" href="apple-touch-icon-120x120.png" rel="apple-touch-icon">
+		<link sizes="76x76" href="apple-touch-icon-76x76.png" rel="apple-touch-icon">
+		<link sizes="152x152" href="apple-touch-icon-152x152.png" rel="apple-touch-icon">
+		<link sizes="180x180" href="apple-touch-icon-180x180.png" rel="apple-touch-icon">
+		<link sizes="192x192" href="favicon-192x192.png" rel="icon" type="image/png">
+		<link sizes="160x160" href="favicon-160x160.png" rel="icon" type="image/png">
+		<link sizes="96x96" href="favicon-96x96.png" rel="icon" type="image/png">
+		<link sizes="16x16" href="favicon-16x16.png" rel="icon" type="image/png">
+		<link sizes="32x32" href="favicon-32x32.png" rel="icon" type="image/png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="application-name" content="">
+		<meta name="msapplication-tooltip" content="">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="mstile-large.png">
+		<meta name="msapplication-starturl" content="https://csssr.github.io/csssr-project-template/">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="msapplication-square70x70logo" content="mstile-small.png">
+		<meta name="msapplication-square150x150logo" content="mstile-medium.png">
+		<meta name="msapplication-wide310x150logo" content="mstile-wide.png">
+		<meta name="msapplication-square310x310logo" content="mstile-large.png">
+		<title>CSSSR Project Template</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="assets/scripts/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+		<link href="assets/styles/app.min.css" rel="stylesheet">
+	</head>
+
+	<body class="page">
+		<div class="main">
+			<div class="container">
+				<header class="header"><a href="#" class="logo"><img src="assets/images/logo.png" alt="logo" title=""
+						 class="logo__img" /></a>
+					<div class="stamp"></div>
+				</header>
+				<div class="personal-data">
+					<h1 class="personal-data__title"></h1>
+					<div class="personal-data-fields">
+						<div class="personal-data-field">
+							<p class="personal-data-field__key">Полное ФИО</p>
+							<p class="personal-data-field__value personal-data-field__value_name">Гиль Константин
+								Викторович</p>
+						</div>
+						<div class="personal-data-field">
+							<p class="personal-data-field__key">Год рождения</p>
+							<p class="personal-data-field__value personal-data-field__value_dob">1993</p>
+						</div>
+						<div class="personal-data-field">
+							<p class="personal-data-field__key">Место жительства</p>
+							<p class="personal-data-field__value personal-data-field__value_city">г. Новосибирск, Россия
+							</p>
+						</div>
+						<div class="personal-data-field">
+							<p class="personal-data-field__key">Скайп</p>
+							<p class="personal-data-field__value personal-data-field__value_skype">vvhill81</p>
+						</div>
+						<div class="personal-data-field">
+							<p class="personal-data-field__key">Почта</p>
+							<p class="personal-data-field__value personal-data-field__value_email">kostgil@mail.ru</p>
+						</div>
+					</div>
+				</div>
+				<div class="skills-data">
+					<h2 class="sub-title">Расскажите о себе чекбоксами</h2>
+					<p class="skills-data__text text">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам.
+						Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей.
+						Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+					<div class="skills-data-list">
+						<div class="skills-data-list__block">
+							<!--если элементов похожих много, то вполне приемлимо вынести в mixin--><label
+							 class="skills-data-item"><span class="skills-data-item__checkbox checked"></span><input
+								 type="checkbox" name="group-1" checked="checked" /><span
+								 class="skills-data-item__text">БЭМ/OOCSS</span></label><label
+							 class="skills-data-item"><span class="skills-data-item__checkbox checked"></span><input
+								 type="checkbox" name="group-1" checked="checked" /><span
+								 class="skills-data-item__text">Pug (Jade)</span></label><label
+							 class="skills-data-item"><span class="skills-data-item__checkbox checked"></span><input
+								 type="checkbox" name="group-1" checked="checked" /><span
+								 class="skills-data-item__text">Stylus/LESS/SASS</span></label><label
+							 class="skills-data-item"><span class="skills-data-item__checkbox"></span><input
+								 type="checkbox" name="group-1" /><span class="skills-data-item__text">Работаю с
+									SVG</span></label><label class="skills-data-item"><span
+								 class="skills-data-item__checkbox checked"></span><input type="checkbox" name="group-1"
+								 checked="checked" /><span class="skills-data-item__text">Верстаю
+									семантично</span></label><label class="skills-data-item"><span
+								 class="skills-data-item__checkbox"></span><input type="checkbox" name="group-1" /><span
+								 class="skills-data-item__text">Accessibility (A11Y)</span></label><label
+							 class="skills-data-item"><span class="skills-data-item__checkbox checked"></span><input
+								 type="checkbox" name="group-1" checked="checked" /><span
+								 class="skills-data-item__text">ES2015/ES2016</span></label></div>
+						<div class="skills-data-list__block"><label class="skills-data-item"><span
+								 class="skills-data-item__checkbox checked"></span><input type="checkbox" name="group-1"
+								 checked="checked" /><span
+								 class="skills-data-item__text">Gulp/GRUNT</span></label><label
+							 class="skills-data-item"><span class="skills-data-item__checkbox checked"></span><input
+								 type="checkbox" name="group-1" checked="checked" /><span
+								 class="skills-data-item__text">Webpack</span></label><label
+							 class="skills-data-item"><span class="skills-data-item__checkbox"></span><input
+								 type="checkbox" name="group-1" /><span class="skills-data-item__text">Дружу с
+									WebGL</span></label><label class="skills-data-item"><span
+								 class="skills-data-item__checkbox checked"></span><input type="checkbox" name="group-1"
+								 checked="checked" /><span class="skills-data-item__text">jQuery</span></label><label
+							 class="skills-data-item"><span class="skills-data-item__checkbox"></span><input
+								 type="checkbox" name="group-1" /><span class="skills-data-item__text">Знаю/изучаю
+									Angular</span></label><label class="skills-data-item"><span
+								 class="skills-data-item__checkbox checked"></span><input type="checkbox" name="group-1"
+								 checked="checked" /><span class="skills-data-item__text">Знаю/изучаю
+									React</span></label><label class="skills-data-item"><span
+								 class="skills-data-item__checkbox checked"></span><input type="checkbox" name="group-1"
+								 checked="checked" /><span class="skills-data-item__text">Знаю/изучаю
+									Node.js</span></label></div>
+						<div class="skills-data-list__block"><label class="skills-data-item"><span
+								 class="skills-data-item__checkbox checked"></span><input type="checkbox" name="group-1"
+								 checked="checked" /><span class="skills-data-item__text">Использую
+									Git</span></label><label class="skills-data-item"><span
+								 class="skills-data-item__checkbox checked"></span><input type="checkbox" name="group-1"
+								 checked="checked" /><span class="skills-data-item__text">С глазомером всё
+									ок</span></label><label class="skills-data-item"><span
+								 class="skills-data-item__checkbox checked"></span><input type="checkbox" name="group-1"
+								 checked="checked" /><span class="skills-data-item__text">Читаю <a
+									 href="http://blog.csssr.ru" target="_blank" rel="noopener"
+									 class="link">blog.csssr.ru</a></span></label><label class="skills-data-item"><span
+								 class="skills-data-item__checkbox checked"></span><input type="checkbox" name="group-1"
+								 checked="checked" /><span class="skills-data-item__text">Я ленивый</span></label><label
+							 class="skills-data-item"><span class="skills-data-item__checkbox"></span><input
+								 type="checkbox" name="group-1" /><span class="skills-data-item__text">У меня хороший
+									английский(не знаю, тех. литературу могу читать, но пусть будет нет)</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="slider">
+					<h2 class="slider__title">Уровень владения JavaScript</h2>
+					<div class="slider__wrapper">
+						<div class="slider__item"></div>
+						<div class="slider__background"></div>
+						<ul class="slider__signs">
+							<li class="slider__sign">Не владею</li>
+							<li class="slider__sign">Использую готовые решения</li>
+							<li class="slider__sign">Использую готовые решения и умею их переделывать</li>
+							<li class="slider__sign">Пишу сложные скрипты</li>
+						</ul>
+					</div>
+				</div>
+				<div class="about">
+					<h2 class="sub-title">Расскажите о себе словами</h2>
+					<p class="about__text text">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы
+						ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки
+						будут добавляться автоматически.</p>
+					<div class="about__wrapper">
+						<!--пока не придумал, как размножить, чтобы при любом оформление текста, строки корректно множились, потому что при добавление переноса строки, рушится вся верстка, а так вроде корректно, но с макетом возможны расхождения, зато решение, самое простое, которое можно придумать.-->
+						<p class="about__story">Нуус... Вообщем, начну с небольшого превью. Не знаю, видели ли вы фильм
+							Ридли Скотта Чужой "Завет"? Ужасно плохой фильм по всем параметрам. Но есть момент, который
+							объяснит метафорически, почему я хочу работать у вас. В сцене драки между двумя андроидами
+							проскользнула фраза "Ты хочешь быть слугой в раю или владыкой в аду?". Как это вообще
+							относится к делу можете спросить? Ну можно сказать, что долгое время, я был "владыкой ада".
+							Я всегда знал, что мне еще многому учится и никогда в вебе не станет так, что нечего
+							изучить/почитать. Я считал себя довольно слабым программистом/верстальщиком. Но ТУТ, я
+							устроился на работу и увидел то, что вообще не ожидал, такой допотопной разработки я еще не
+							видел, люди не пользовались иструментами сборки(gulp/webpack), препроцессорами, не
+							пользовались методологиями именования классов(по мне это реально упрощает разработку,
+							особенно на больших проектах), элементарно git-ОМ. Тут я реально себя почуствовал супер
+							крутым, хотя я понимал, что это далеко не так, но все познается в сравнении. Я расслабился,
+							пытался поначалу изучать что-то новое, но компании было без разницы, как и что "под
+							капотом", главное результат, оно и понятно. И как бы плохо я не писал код, все равно, я был
+							человеком, который решал вопросы по верстке, возникавшие у других(aka Владыка). Со временем,
+							я забил и просто работал, пока не понял, что перегораю и стагнирую одновременно. По итогу, я
+							взял перерыв, занимался абсолютно другим, дабы прочистить мозги. Сейчас, я снова вливаюсь в
+							веб, начал изучение фреймворка(React), до этого, я обходился спокойно чистым js и jquery,
+							потому что они подходили для всех проектов компании. Я понимаю, чтобы не перегореть и не
+							было стагнации, нужно учится у людей, которые прекрасно и давно справляются со своей узкой
+							специализацией и я уверен, способны научить многому. Ваша компания, для этого прекрасно
+							подходит, это я понял, еще когда начал пользоваться вашими инструментами стайл-гайдами и
+							прочими полезными штуками вроде статей в блоге. Собственно, лучше я буду "слугой в раю" у
+							людей, с которыми можно постоянно развиваться, чем "владыкой" работать там, где годами
+							ничего не меняется.</p>
+					</div>
+				</div>
+				<div class="footer">
+					<h2 class="sub-title">Какие у вас планы на будущее?</h2>
+					<p class="footer__text text">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы
+						поменяются.</p>
+					<div class="plans"><label class="plan-radio-btn"><span class="plan-radio-btn__check"></span><span
+							 class="plan-radio-btn__text">Верстать</span><input type="radio"
+							 name="group-2" /></label><label class="plan-radio-btn"><span
+							 class="plan-radio-btn__check checked"></span><span
+							 class="plan-radio-btn__text">Прокачиваться в JS</span><input type="radio" name="group-2"
+							 checked="checked" /></label><label class="plan-radio-btn"><span
+							 class="plan-radio-btn__check"></span><span
+							 class="plan-radio-btn__text">Менеджерство</span><input type="radio"
+							 name="group-2" /></label><label class="plan-radio-btn"><span
+							 class="plan-radio-btn__check"></span><span class="plan-radio-btn__text">Другое</span><input
+							 type="radio" name="group-2" /></label></div>
+					<div class="signature-date">
+						<p class="signature-date__title">Дата заполнения</p>
+						<p class="signature-date__date">05.05.2019</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="assets/scripts/vendor/nouislider/nouislider.min.js"></script>
+		<script src="assets/scripts/app.min.js"></script>
+	</body>
+
+</html>
