@@ -1,0 +1,49 @@
+.skills-data
+	margin-top 65px
+
+	&__text
+		margin-top 12px
+
+.skills-data-list
+	margin-top 25px
+	display flex
+	justify-content space-between
+
+	&__block
+		flex 0 0 33.333333333333336%
+
+.skills-data-item
+	display block
+	font-size 21px
+	margin-bottom 4px
+	font-weight 700
+	color #000000
+
+	&__checkbox
+		display inline-block
+		background-image url(../images/sprites/checkbox-btn.png)
+		background-position -32px 0
+		width 20px
+		height 19px
+		background-position -32px 9px
+		width 24px
+		height 28px
+		background-repeat no-repeat
+		background-position -32px 9px
+
+		&.checked
+			background-image url(../images/sprites/checkbox-btn.png)
+			background-position 0 0
+			width 24px
+			height 28px
+
+	&__text
+		display inline-block
+		width 80%
+		line-height 1.19
+		margin-left 5px
+		vertical-align text-top
+
+.skills-data-item
+	input
+		display none

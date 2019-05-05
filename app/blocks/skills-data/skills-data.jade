@@ -1,0 +1,50 @@
+mixin skills-data()
+	+b.skills-data&attributes(attributes)
+		h2.sub-title Расскажите о себе чекбоксами
+		+e.P.text.text Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+
+		+skills-data-list
+
+
+mixin skills-data-list()
+	+b.skills-data-list
+		+e.block
+			//если элементов похожих много, то вполне приемлимо вынести в mixin
+			+data-item('БЭМ/OOCSS', true)
+			+data-item('Pug (Jade)', true)
+			+data-item('Stylus/LESS/SASS', true)
+			+data-item('Работаю с SVG', false)
+			+data-item('Верстаю семантично', true)
+			+data-item('Accessibility (A11Y)', false)
+			+data-item('ES2015/ES2016', true)
+
+		+e.block
+			+data-item('Gulp/GRUNT', true)
+			+data-item('Webpack', true)
+			+data-item('Дружу с WebGL', false)
+			+data-item('jQuery', true)
+			+data-item('Знаю/изучаю Angular', false)
+			+data-item('Знаю/изучаю React', true)
+			+data-item('Знаю/изучаю Node.js', true)
+
+		+e.block
+			+data-item('Использую Git', true)
+			+data-item('С глазомером всё ок', true)
+			+data-item('Читаю ', true, 'blog.csssr.ru')
+			+data-item('Я ленивый', true)
+			+data-item('У меня хороший английский(не знаю, тех. литературу могу читать, но пусть будет нет)', false)
+
+mixin data-item(text, state, link)
+	- var addr = 'http://' + link;
+
+	+b.LABEL.skills-data-item
+		if !state
+			+e.SPAN.checkbox
+			input(type='checkbox' name='group-1')
+		else
+			+e.SPAN.checkbox.checked
+			input(type='checkbox' name='group-1' checked)
+
+		+e.SPAN.text= text
+			if link
+				a.link(href='#{addr}' target='_blank' rel='noopener')= link

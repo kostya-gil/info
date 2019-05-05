@@ -1,0 +1,30 @@
+mixin footer()
+	+b.footer&attributes(attributes)
+		h2.sub-title Какие у вас планы на будущее?
+		+e.P.text.text Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+
+		+b.plans
+			+b.LABEL.plan-radio-btn
+				+e.check
+				+e.text Верстать
+				input(type='radio' name='group-2')
+
+			+b.LABEL.plan-radio-btn
+				+e.check.checked
+				+e.text Прокачиваться в JS
+				input(type='radio' name='group-2' checked)
+
+			+b.LABEL.plan-radio-btn
+				+e.check
+				+e.text Менеджерство
+				input(type='radio' name='group-2')
+
+			+b.LABEL.plan-radio-btn
+				+e.check
+				+e.text Другое
+				input(type='radio' name='group-2')
+
+		+b.signature-date
+			+e.P.title Дата заполнения
+			+e.P.date 05.05.2019
+

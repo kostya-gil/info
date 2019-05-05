@@ -1,0 +1,63 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+
+//base styles
+
+.page
+	font-size 16px
+	line-height 1
+	font-family PT Sans,sans-serif
+	background #797979
+	color #2f1b15
+	min-width 1000px
+
+ul
+	list-style none
+
+label
+	cursor pointer
+	-webkit-user-select none
+	-moz-user-select none
+	-ms-user-select none
+	user-select none
+
+.container
+	margin-left auto
+	margin-right auto
+	width 770px
+
+.main
+	padding-top 65px
+	padding-bottom 75px
+	background url(../images/background.jpg) repeat-y top
+	margin-x(auto)
+	width 1000px
+
+.sub-title
+	font-size 24px
+	font-weight 700
+
+.text
+		font-size 14px
+		color #3d3d3d
+		line-height 1.533
+
+.link
+	color #014f98
+	text-decoration none
+	position relative
+
+	&:after
+		content ''
+		position absolute
+		bottom 0
+		left 0
+		right 0
+		height 1px
+		background #396b95
+
+import('../blocks/**/*')

@@ -1,0 +1,24 @@
+mixin personal-data()
+	+b.personal-data&attributes(attributes)
+			+e.H1.title
+
+			+b.personal-data-fields
+				+b.personal-data-field
+					+e.P.key Полное ФИО
+					+e.P.value._name Гиль Константин Викторович
+
+				+b.personal-data-field
+					+e.P.key Год рождения
+					+e.P.value._dob 1993
+
+				+b.personal-data-field
+					+e.P.key Место жительства
+					+e.P.value._city г. Новосибирск, Россия
+
+				+b.personal-data-field
+					+e.P.key Скайп
+					+e.P.value._skype vvhill81
+
+				+b.personal-data-field
+					+e.P.key Почта
+					+e.P.value._email kostgil@mail.ru
